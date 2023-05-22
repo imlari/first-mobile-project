@@ -51,7 +51,7 @@ userRoutes.route('/update/:id').put(function (req, res) {
         user.email = req.body.email;
         user.phone_number = req.body.phone_number;
 
-        user.save().then(business => {
+        user.save().then(students => {
           res.status(200).json({'status': 'success','mssg': 'Update complete'});
       })
     }
